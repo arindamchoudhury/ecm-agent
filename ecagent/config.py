@@ -145,10 +145,10 @@ class SMConfigObj(ConfigObj):
         return self['XMPP'].get('unique_id', '')
 
     def get_client_id(self):
-        return self['XMPP'].get('client_id')
+        return self['XMPP'].get('client_id', '')
 
     def get_server_group_id(self):
-        return self['XMPP'].get('server_group_id')
+        return self['XMPP'].get('server_group_id', '')
 
     @staticmethod
     def _get_uuid_pre_configured():
